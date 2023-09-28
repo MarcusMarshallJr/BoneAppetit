@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1852782AC50367003C32BF /* BASearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1852772AC50367003C32BF /* BASearchField.swift */; };
+		0C18527A2AC503E4003C32BF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1852792AC503E4003C32BF /* View+Extensions.swift */; };
+		0C18527D2AC51B68003C32BF /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18527C2AC51B68003C32BF /* LaunchScreen.swift */; };
+		0CC25DEC2AC3152100FDB5B2 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC25DEB2AC3152100FDB5B2 /* MealService.swift */; };
+		0CC930B72AC3792E009B0354 /* AggregateMealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930B62AC3792E009B0354 /* AggregateMealsModel.swift */; };
+		0CC930B92AC37AAE009B0354 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930B82AC37AAE009B0354 /* Text+Extensions.swift */; };
+		0CC930BD2AC3800D009B0354 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930BC2AC3800D009B0354 /* URLSession+Extensions.swift */; };
+		0CC930C42AC38692009B0354 /* RCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930C32AC38692009B0354 /* RCError.swift */; };
+		0CC930C62AC386F3009B0354 /* BAErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930C52AC386F3009B0354 /* BAErrorView.swift */; };
+		0CC930C82AC392FA009B0354 /* TheMealDBMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC930C72AC392FA009B0354 /* TheMealDBMapper.swift */; };
+		0CCCD09F2ABCDCC500DB5646 /* BoneAppetitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD09E2ABCDCC500DB5646 /* BoneAppetitApp.swift */; };
+		0CCCD0A32ABCDCC700DB5646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCCD0A22ABCDCC700DB5646 /* Assets.xcassets */; };
+		0CCCD0A62ABCDCC700DB5646 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCCD0A52ABCDCC700DB5646 /* Preview Assets.xcassets */; };
+		0CCCD0B02ABCDCC700DB5646 /* BoneAppetitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0AF2ABCDCC700DB5646 /* BoneAppetitTests.swift */; };
+		0CCCD0BA2ABCDCC700DB5646 /* BoneAppetitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0B92ABCDCC700DB5646 /* BoneAppetitUITests.swift */; };
+		0CCCD0BC2ABCDCC700DB5646 /* BoneAppetitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0BB2ABCDCC700DB5646 /* BoneAppetitUITestsLaunchTests.swift */; };
+		0CCCD0C92ABCDD0700DB5646 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0C82ABCDD0700DB5646 /* Endpoint.swift */; };
+		0CCCD0CB2ABCE5EF00DB5646 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0CA2ABCE5EF00DB5646 /* Meal.swift */; };
+		0CCCD0CE2ABCECF200DB5646 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0CD2ABCECF200DB5646 /* HTTPClient.swift */; };
+		0CCCD0D12ABE2B9600DB5646 /* MealDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0D02ABE2B9600DB5646 /* MealDetailScreen.swift */; };
+		0CCCD0D42ABE2C0900DB5646 /* BACircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0D32ABE2C0900DB5646 /* BACircularButton.swift */; };
+		0CCCD0D62ABE2E1100DB5646 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCCD0D52ABE2E1100DB5646 /* ColorAssets.xcassets */; };
+		0CCCD0D92ABE2FE600DB5646 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0D82ABE2FE600DB5646 /* Colors.swift */; };
+		0CCCD0E02ABE436C00DB5646 /* SectionHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0DF2ABE436C00DB5646 /* SectionHeading.swift */; };
+		0CCCD0E22ABF75A500DB5646 /* InstructionListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0E12ABF75A500DB5646 /* InstructionListItemView.swift */; };
+		0CCCD0E42ABF7B2E00DB5646 /* IngredientListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0E32ABF7B2E00DB5646 /* IngredientListItemView.swift */; };
+		0CCCD0E72ABF7D9A00DB5646 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0E62ABF7D9A00DB5646 /* CategoryScreen.swift */; };
+		0CCCD0E92ABF807C00DB5646 /* MealListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0E82ABF807C00DB5646 /* MealListItemView.swift */; };
+		0CCCD0EB2ABFA6A800DB5646 /* CategoryTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0EA2ABFA6A800DB5646 /* CategoryTabs.swift */; };
+		0CCCD0ED2ABFA77300DB5646 /* MealCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0EC2ABFA77300DB5646 /* MealCategory.swift */; };
+		0CCCD0F12ABFBB0C00DB5646 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD0F02ABFBB0C00DB5646 /* UINavigationController+Extensions.swift */; };
+		0CDCA8222AC2159300248D1E /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCA8212AC2159300248D1E /* Ingredient.swift */; };
+		0CDCA8252AC2283B00248D1E /* TheMealDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCA8242AC2283B00248D1E /* TheMealDB-Info.plist */; };
+		0CDCA8272AC2319A00248D1E /* RCNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCA8262AC2319A00248D1E /* RCNetworkError.swift */; };
+		0CED687C2AC5B9AC00CC5D59 /* BAAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED687B2AC5B9AC00CC5D59 /* BAAsyncImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CCCD0AC2ABCDCC700DB5646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CCCD0932ABCDCC500DB5646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CCCD09A2ABCDCC500DB5646;
+			remoteInfo = Recipe;
+		};
+		0CCCD0B62ABCDCC700DB5646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CCCD0932ABCDCC500DB5646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CCCD09A2ABCDCC500DB5646;
+			remoteInfo = Recipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1852772AC50367003C32BF /* BASearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASearchField.swift; sourceTree = "<group>"; };
+		0C1852792AC503E4003C32BF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		0C18527C2AC51B68003C32BF /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		0CC25DEB2AC3152100FDB5B2 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		0CC930B62AC3792E009B0354 /* AggregateMealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateMealsModel.swift; sourceTree = "<group>"; };
+		0CC930B82AC37AAE009B0354 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
+		0CC930BC2AC3800D009B0354 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		0CC930C32AC38692009B0354 /* RCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCError.swift; sourceTree = "<group>"; };
+		0CC930C52AC386F3009B0354 /* BAErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAErrorView.swift; sourceTree = "<group>"; };
+		0CC930C72AC392FA009B0354 /* TheMealDBMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBMapper.swift; sourceTree = "<group>"; };
+		0CCCD09B2ABCDCC500DB5646 /* BoneAppetit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneAppetit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCCD09E2ABCDCC500DB5646 /* BoneAppetitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitApp.swift; sourceTree = "<group>"; };
+		0CCCD0A22ABCDCC700DB5646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CCCD0A52ABCDCC700DB5646 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CCCD0AB2ABCDCC700DB5646 /* BoneAppetitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneAppetitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCCD0AF2ABCDCC700DB5646 /* BoneAppetitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitTests.swift; sourceTree = "<group>"; };
+		0CCCD0B52ABCDCC700DB5646 /* BoneAppetitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneAppetitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCCD0B92ABCDCC700DB5646 /* BoneAppetitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitUITests.swift; sourceTree = "<group>"; };
+		0CCCD0BB2ABCDCC700DB5646 /* BoneAppetitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CCCD0C82ABCDD0700DB5646 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0CCCD0CA2ABCE5EF00DB5646 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0CCCD0CD2ABCECF200DB5646 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		0CCCD0D02ABE2B9600DB5646 /* MealDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreen.swift; sourceTree = "<group>"; };
+		0CCCD0D32ABE2C0900DB5646 /* BACircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BACircularButton.swift; sourceTree = "<group>"; };
+		0CCCD0D52ABE2E1100DB5646 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		0CCCD0D82ABE2FE600DB5646 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0CCCD0DF2ABE436C00DB5646 /* SectionHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeading.swift; sourceTree = "<group>"; };
+		0CCCD0E12ABF75A500DB5646 /* InstructionListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionListItemView.swift; sourceTree = "<group>"; };
+		0CCCD0E32ABF7B2E00DB5646 /* IngredientListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListItemView.swift; sourceTree = "<group>"; };
+		0CCCD0E62ABF7D9A00DB5646 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
+		0CCCD0E82ABF807C00DB5646 /* MealListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListItemView.swift; sourceTree = "<group>"; };
+		0CCCD0EA2ABFA6A800DB5646 /* CategoryTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTabs.swift; sourceTree = "<group>"; };
+		0CCCD0EC2ABFA77300DB5646 /* MealCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategory.swift; sourceTree = "<group>"; };
+		0CCCD0F02ABFBB0C00DB5646 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		0CDCA8212AC2159300248D1E /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		0CDCA8242AC2283B00248D1E /* TheMealDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheMealDB-Info.plist"; sourceTree = "<group>"; };
+		0CDCA8262AC2319A00248D1E /* RCNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNetworkError.swift; sourceTree = "<group>"; };
+		0CED687B2AC5B9AC00CC5D59 /* BAAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAAsyncImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CCCD0982ABCDCC500DB5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0A82ABCDCC700DB5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0B22ABCDCC700DB5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C18527B2AC51B5A003C32BF /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				0C18527C2AC51B68003C32BF /* LaunchScreen.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		0CC930BE2AC380FA009B0354 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0DF2ABE436C00DB5646 /* SectionHeading.swift */,
+				0CCCD0E12ABF75A500DB5646 /* InstructionListItemView.swift */,
+				0CCCD0E32ABF7B2E00DB5646 /* IngredientListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CC930BF2AC38103009B0354 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0EA2ABFA6A800DB5646 /* CategoryTabs.swift */,
+				0CCCD0E82ABF807C00DB5646 /* MealListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CC930C02AC38651009B0354 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0CC930C32AC38692009B0354 /* RCError.swift */,
+				0CC930C12AC38666009B0354 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0CC930C12AC38666009B0354 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0D32ABE2C0900DB5646 /* BACircularButton.swift */,
+				0C1852772AC50367003C32BF /* BASearchField.swift */,
+				0CC930C52AC386F3009B0354 /* BAErrorView.swift */,
+				0CED687B2AC5B9AC00CC5D59 /* BAAsyncImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CCCD0922ABCDCC500DB5646 = {
+			isa = PBXGroup;
+			children = (
+				0CCCD09D2ABCDCC500DB5646 /* BoneAppetitApp */,
+				0CCCD0AE2ABCDCC700DB5646 /* BoneAppetitTests */,
+				0CCCD0B82ABCDCC700DB5646 /* BoneAppetitUITests */,
+				0CCCD09C2ABCDCC500DB5646 /* Products */,
+			);
+			indentWidth = 3;
+			sourceTree = "<group>";
+			tabWidth = 3;
+		};
+		0CCCD09C2ABCDCC500DB5646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD09B2ABCDCC500DB5646 /* BoneAppetit.app */,
+				0CCCD0AB2ABCDCC700DB5646 /* BoneAppetitTests.xctest */,
+				0CCCD0B52ABCDCC700DB5646 /* BoneAppetitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CCCD09D2ABCDCC500DB5646 /* BoneAppetitApp */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD09E2ABCDCC500DB5646 /* BoneAppetitApp.swift */,
+				0CC930B62AC3792E009B0354 /* AggregateMealsModel.swift */,
+				0CC930C02AC38651009B0354 /* Core */,
+				0CCCD0D72ABE2FDB00DB5646 /* Constants */,
+				0CCCD0D22ABE2BFE00DB5646 /* Extensions */,
+				0CDCA8232AC221F900248D1E /* Networking */,
+				0CCCD0CC2ABCEAA000DB5646 /* Models */,
+				0C18527B2AC51B5A003C32BF /* Launch */,
+				0CCCD0E52ABF7D6800DB5646 /* Category */,
+				0CCCD0CF2ABE2B7200DB5646 /* MealDetail */,
+				0CCCD0A22ABCDCC700DB5646 /* Assets.xcassets */,
+				0CCCD0D52ABE2E1100DB5646 /* ColorAssets.xcassets */,
+				0CDCA8242AC2283B00248D1E /* TheMealDB-Info.plist */,
+				0CCCD0A42ABCDCC700DB5646 /* Preview Content */,
+			);
+			path = BoneAppetitApp;
+			sourceTree = "<group>";
+		};
+		0CCCD0A42ABCDCC700DB5646 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0A52ABCDCC700DB5646 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CCCD0AE2ABCDCC700DB5646 /* BoneAppetitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0AF2ABCDCC700DB5646 /* BoneAppetitTests.swift */,
+			);
+			path = BoneAppetitTests;
+			sourceTree = "<group>";
+		};
+		0CCCD0B82ABCDCC700DB5646 /* BoneAppetitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0B92ABCDCC700DB5646 /* BoneAppetitUITests.swift */,
+				0CCCD0BB2ABCDCC700DB5646 /* BoneAppetitUITestsLaunchTests.swift */,
+			);
+			path = BoneAppetitUITests;
+			sourceTree = "<group>";
+		};
+		0CCCD0CC2ABCEAA000DB5646 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0CA2ABCE5EF00DB5646 /* Meal.swift */,
+				0CDCA8212AC2159300248D1E /* Ingredient.swift */,
+				0CCCD0EC2ABFA77300DB5646 /* MealCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CCCD0CF2ABE2B7200DB5646 /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0D02ABE2B9600DB5646 /* MealDetailScreen.swift */,
+				0CC930BE2AC380FA009B0354 /* Views */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		0CCCD0D22ABE2BFE00DB5646 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CC930B82AC37AAE009B0354 /* Text+Extensions.swift */,
+				0C1852792AC503E4003C32BF /* View+Extensions.swift */,
+				0CC930BC2AC3800D009B0354 /* URLSession+Extensions.swift */,
+				0CCCD0F02ABFBB0C00DB5646 /* UINavigationController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CCCD0D72ABE2FDB00DB5646 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0D82ABE2FE600DB5646 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0CCCD0E52ABF7D6800DB5646 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0E62ABF7D9A00DB5646 /* CategoryScreen.swift */,
+				0CC930BF2AC38103009B0354 /* Views */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0CDCA8232AC221F900248D1E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCD0C82ABCDD0700DB5646 /* Endpoint.swift */,
+				0CCCD0CD2ABCECF200DB5646 /* HTTPClient.swift */,
+				0CDCA8262AC2319A00248D1E /* RCNetworkError.swift */,
+				0CC25DEB2AC3152100FDB5B2 /* MealService.swift */,
+				0CC930C72AC392FA009B0354 /* TheMealDBMapper.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CCCD09A2ABCDCC500DB5646 /* BoneAppetit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CCCD0BF2ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetit" */;
+			buildPhases = (
+				0CCCD0972ABCDCC500DB5646 /* Sources */,
+				0CCCD0982ABCDCC500DB5646 /* Frameworks */,
+				0CCCD0992ABCDCC500DB5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoneAppetit;
+			productName = Recipe;
+			productReference = 0CCCD09B2ABCDCC500DB5646 /* BoneAppetit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CCCD0AA2ABCDCC700DB5646 /* BoneAppetitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CCCD0C22ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetitTests" */;
+			buildPhases = (
+				0CCCD0A72ABCDCC700DB5646 /* Sources */,
+				0CCCD0A82ABCDCC700DB5646 /* Frameworks */,
+				0CCCD0A92ABCDCC700DB5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CCCD0AD2ABCDCC700DB5646 /* PBXTargetDependency */,
+			);
+			name = BoneAppetitTests;
+			productName = RecipeTests;
+			productReference = 0CCCD0AB2ABCDCC700DB5646 /* BoneAppetitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CCCD0B42ABCDCC700DB5646 /* BoneAppetitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CCCD0C52ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetitUITests" */;
+			buildPhases = (
+				0CCCD0B12ABCDCC700DB5646 /* Sources */,
+				0CCCD0B22ABCDCC700DB5646 /* Frameworks */,
+				0CCCD0B32ABCDCC700DB5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CCCD0B72ABCDCC700DB5646 /* PBXTargetDependency */,
+			);
+			name = BoneAppetitUITests;
+			productName = RecipeUITests;
+			productReference = 0CCCD0B52ABCDCC700DB5646 /* BoneAppetitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CCCD0932ABCDCC500DB5646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0CCCD09A2ABCDCC500DB5646 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0CCCD0AA2ABCDCC700DB5646 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0CCCD09A2ABCDCC500DB5646;
+					};
+					0CCCD0B42ABCDCC700DB5646 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0CCCD09A2ABCDCC500DB5646;
+					};
+				};
+			};
+			buildConfigurationList = 0CCCD0962ABCDCC500DB5646 /* Build configuration list for PBXProject "BoneAppetit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CCCD0922ABCDCC500DB5646;
+			productRefGroup = 0CCCD09C2ABCDCC500DB5646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CCCD09A2ABCDCC500DB5646 /* BoneAppetit */,
+				0CCCD0AA2ABCDCC700DB5646 /* BoneAppetitTests */,
+				0CCCD0B42ABCDCC700DB5646 /* BoneAppetitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CCCD0992ABCDCC500DB5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCCD0D62ABE2E1100DB5646 /* ColorAssets.xcassets in Resources */,
+				0CDCA8252AC2283B00248D1E /* TheMealDB-Info.plist in Resources */,
+				0CCCD0A62ABCDCC700DB5646 /* Preview Assets.xcassets in Resources */,
+				0CCCD0A32ABCDCC700DB5646 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0A92ABCDCC700DB5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0B32ABCDCC700DB5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CCCD0972ABCDCC500DB5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C18527D2AC51B68003C32BF /* LaunchScreen.swift in Sources */,
+				0CCCD0ED2ABFA77300DB5646 /* MealCategory.swift in Sources */,
+				0C18527A2AC503E4003C32BF /* View+Extensions.swift in Sources */,
+				0CCCD0CE2ABCECF200DB5646 /* HTTPClient.swift in Sources */,
+				0CCCD0D92ABE2FE600DB5646 /* Colors.swift in Sources */,
+				0CC930B92AC37AAE009B0354 /* Text+Extensions.swift in Sources */,
+				0CCCD0EB2ABFA6A800DB5646 /* CategoryTabs.swift in Sources */,
+				0CDCA8222AC2159300248D1E /* Ingredient.swift in Sources */,
+				0CC930C62AC386F3009B0354 /* BAErrorView.swift in Sources */,
+				0CC25DEC2AC3152100FDB5B2 /* MealService.swift in Sources */,
+				0CC930B72AC3792E009B0354 /* AggregateMealsModel.swift in Sources */,
+				0CCCD0CB2ABCE5EF00DB5646 /* Meal.swift in Sources */,
+				0C1852782AC50367003C32BF /* BASearchField.swift in Sources */,
+				0CED687C2AC5B9AC00CC5D59 /* BAAsyncImage.swift in Sources */,
+				0CCCD0D12ABE2B9600DB5646 /* MealDetailScreen.swift in Sources */,
+				0CCCD0E02ABE436C00DB5646 /* SectionHeading.swift in Sources */,
+				0CC930C42AC38692009B0354 /* RCError.swift in Sources */,
+				0CCCD0E92ABF807C00DB5646 /* MealListItemView.swift in Sources */,
+				0CC930BD2AC3800D009B0354 /* URLSession+Extensions.swift in Sources */,
+				0CCCD0E42ABF7B2E00DB5646 /* IngredientListItemView.swift in Sources */,
+				0CCCD0C92ABCDD0700DB5646 /* Endpoint.swift in Sources */,
+				0CDCA8272AC2319A00248D1E /* RCNetworkError.swift in Sources */,
+				0CCCD0D42ABE2C0900DB5646 /* BACircularButton.swift in Sources */,
+				0CCCD0E72ABF7D9A00DB5646 /* CategoryScreen.swift in Sources */,
+				0CCCD09F2ABCDCC500DB5646 /* BoneAppetitApp.swift in Sources */,
+				0CCCD0F12ABFBB0C00DB5646 /* UINavigationController+Extensions.swift in Sources */,
+				0CC930C82AC392FA009B0354 /* TheMealDBMapper.swift in Sources */,
+				0CCCD0E22ABF75A500DB5646 /* InstructionListItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0A72ABCDCC700DB5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCCD0B02ABCDCC700DB5646 /* BoneAppetitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CCCD0B12ABCDCC700DB5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCCD0BC2ABCDCC700DB5646 /* BoneAppetitUITestsLaunchTests.swift in Sources */,
+				0CCCD0BA2ABCDCC700DB5646 /* BoneAppetitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CCCD0AD2ABCDCC700DB5646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CCCD09A2ABCDCC500DB5646 /* BoneAppetit */;
+			targetProxy = 0CCCD0AC2ABCDCC700DB5646 /* PBXContainerItemProxy */;
+		};
+		0CCCD0B72ABCDCC700DB5646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CCCD09A2ABCDCC500DB5646 /* BoneAppetit */;
+			targetProxy = 0CCCD0B62ABCDCC700DB5646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CCCD0BD2ABCDCC700DB5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CCCD0BE2ABCDCC700DB5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CCCD0C02ABCDCC700DB5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoneAppetitApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bone Appétit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CCCD0C12ABCDCC700DB5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoneAppetitApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bone Appétit";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CCCD0C32ABCDCC700DB5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoneAppetit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoneAppetit";
+			};
+			name = Debug;
+		};
+		0CCCD0C42ABCDCC700DB5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoneAppetit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoneAppetit";
+			};
+			name = Release;
+		};
+		0CCCD0C62ABCDCC700DB5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recipe;
+			};
+			name = Debug;
+		};
+		0CCCD0C72ABCDCC700DB5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VXJUNYC2Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusmarshalljr.boneappetitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CCCD0962ABCDCC500DB5646 /* Build configuration list for PBXProject "BoneAppetit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCCD0BD2ABCDCC700DB5646 /* Debug */,
+				0CCCD0BE2ABCDCC700DB5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CCCD0BF2ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCCD0C02ABCDCC700DB5646 /* Debug */,
+				0CCCD0C12ABCDCC700DB5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CCCD0C22ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCCD0C32ABCDCC700DB5646 /* Debug */,
+				0CCCD0C42ABCDCC700DB5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CCCD0C52ABCDCC700DB5646 /* Build configuration list for PBXNativeTarget "BoneAppetitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCCD0C62ABCDCC700DB5646 /* Debug */,
+				0CCCD0C72ABCDCC700DB5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CCCD0932ABCDCC500DB5646 /* Project object */;
+}
